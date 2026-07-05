@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>名寄市立総合病院　呼吸器科</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Noto Sans JP', sans-serif;
+    background: #f5f5f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ヘッダー */
+  .header {
+    background: #534AB7;
+    color: #fff;
+    padding: 28px 24px 24px;
+    text-align: center;
+  }
+  .header-sub {
+    font-size: 13px;
+    opacity: 0.8;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+  }
+  .header h1 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+  }
+
+  /* メインコンテンツ */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+  }
+  .lead {
+    font-size: 14px;
+    color: #636366;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+
+  /* ボタンカード */
+  .btn-list {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .survey-btn {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: none;
+    border-radius: 16px;
+    padding: 20px 24px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-decoration: none;
+    transition: transform 0.15s, box-shadow 0.15s;
+    gap: 18px;
+  }
+  .survey-btn:active {
+    transform: scale(0.97);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  }
+  .btn-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+    flex-shrink: 0;
+    letter-spacing: 0.5px;
+  }
+  .btn-icon.act {
+    background: #EEEDFe;
+    color: #534AB7;
+  }
+  .btn-icon.cat {
+    background: #E1F5EE;
+    color: #0F6E56;
+  }
+  .btn-text {
+    flex: 1;
+    text-align: left;
+  }
+  .btn-name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 3px;
+  }
+  .btn-desc {
+    font-size: 12px;
+    color: #8e8e93;
+    line-height: 1.5;
+  }
+  .btn-arrow {
+    font-size: 20px;
+    color: #c7c7cc;
+  }
+
+  /* 準備中バッジ */
+  .badge-soon {
+    display: inline-block;
+    background: #f5f5f7;
+    color: #8e8e93;
+    font-size: 11px;
+    border-radius: 6px;
+    padding: 2px 8px;
+    margin-top: 4px;
+    border: 1px solid #e5e5ea;
+  }
+
+  /* フッター */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 11px;
+    color: #c7c7cc;
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <p class="header-sub">問診アンケート</p>
+  <h1>名寄市立総合病院<br>呼吸器科</h1>
+</div>
+
+<div class="main">
+  <p class="lead">受けたいアンケートを選んでください</p>
+
+  <div class="btn-list">
+
+    <!-- ACTボタン -->
+    <a class="survey-btn" href="act_survey.html">
+      <div class="btn-icon act">ACT</div>
+      <div class="btn-text">
+        <div class="btn-name">ACT</div>
+        <div class="btn-desc">喘息コントロールテスト<br>Asthma Control Test</div>
+      </div>
+      <div class="btn-arrow">›</div>
+    </a>
+
+    <!-- CATボタン（準備中） -->
+    <div class="survey-btn" style="opacity:0.6; cursor:not-allowed;">
+      <div class="btn-icon cat">CAT</div>
+      <div class="btn-text">
+        <div class="btn-name">CAT</div>
+        <div class="btn-desc">COPD アセスメントテスト<br>COPD Assessment Test</div>
+        <span class="badge-soon">準備中</span>
+      </div>
+      <div class="btn-arrow">›</div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  名寄市立総合病院　呼吸器科
+</div>
+
+</body>
+</html>
